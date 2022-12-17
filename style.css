@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    letter-spacing: 0.4px;
+}
+nav{
+    width: 100%;
+    height: 85px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: sticky;
+    background: #fff; 
+    
+}nav .logo img{
+    float: left;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+nav .logo p{
+    font-family: "rubik";
+    font-size: 22px;
+    font-weight: 1000;
+    float: left;
+    color: #cc1d1d;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin-top: 0;
+}
+nav ul{
+    float: right;
+    margin-top: 0;
+    
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav li a{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    color: #cc1d1d;
+    text-decoration: none;
+}
+body{
+    background-color: #f3f3f3;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+         #ec1e1e,
+        #5e1616
+    ) fixed;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-150%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.4);
+}
+.container .head-title h2{
+    color: #cc1d1d;
+}
+
+.container-image{
+    width: 800px;
+    height: 600px;
+    padding: 50px 40px;
+    border-radius: 2px;
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.4);
+   background-image: url("https://www.pacu.org.ph/wordpress/wp-content/uploads/2017/05/Lyceum-of-the-Philippines-Laguna.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   animation: change 20s infinite;
+}
+
+@keyframes change {
+   
+    40%
+    {
+        background-image: url("https://edukasyon-production.s3.ap-southeast-1.amazonaws.com/uploads/facility/image/3323/_DSC0427.JPG");
+    }
+    60%
+    {
+        background-image: url("https://edukasyon-production.s3.ap-southeast-1.amazonaws.com/uploads/facility/image/3326/DSC_0181.jpg");
+    }
+    80%
+    {
+        background-image: url("https://edukasyon-production.s3.ap-southeast-1.amazonaws.com/uploads/facility/image/3322/_DSC0321.JPG");
+    }
+    100%
+    {
+        background-image: url("https://edukasyon-production.s3.ap-southeast-1.amazonaws.com/uploads/facility/image/3321/_DSC0144.JPG");
+    }
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.lbl{
+    font-size: 16px;
+    color: #cc1d1d;
+    font-weight: 400;
+}
+.val{
+    color: #cc1d1d;
+    font-weight: 500;
+    font-size: 18px;
+}
+.input-box{
+    background-color: #cc1d1d;
+    color: #fff;
+    padding: 5px;
+    text-align: left;
+}
+#bill{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: right;
+    color: #fff;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid #5e1616;
+}
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+input[type="range"]:not(:last-child){
+    margin-bottom: 5px;
+}
+section:not(:last-child){
+    margin-bottom: 40px;
+}
+section:not(:first-child){
+    margin-top: 40px;
+}
+section:last-child{
+    background-color: #cc1d1d;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+section:last-child .val,
+section:last-child .lbl{
+    color: #fff;
+}
+
+footer{
+    background: linear-gradient(
+        135deg,
+         #ec1e1e,
+        #5e1616
+    ) fixed;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 40%;
+    
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-icons a{
+    background-color: #fff;
+    color: #ec1e1e;
+    padding: 15px;
+    border-radius: 100px;
+    display: flex;
+    font-size: 25px;
+}
+
+.footer-menu a{
+    color: #fff;
+    width: 100%;;
+    
+}
+
+.footer-copyright{
+    background: linear-gradient(
+        135deg,
+         #ec1e1e,
+        #5e1616
+    ) fixed;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 1px;
+    
+  
+}
